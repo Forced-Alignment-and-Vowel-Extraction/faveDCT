@@ -4,7 +4,7 @@
 \alias{dct_basis}
 \title{DCT Basis}
 \usage{
-dct_basis(n_basis = 5, size = 100)
+dct_basis(n_basis = 5, size = n_basis)
 }
 \arguments{
 \item{n_basis}{The number of basis functions to return}

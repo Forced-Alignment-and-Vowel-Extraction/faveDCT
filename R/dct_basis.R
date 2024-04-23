@@ -22,7 +22,6 @@
 #' @param n_basis The number of basis functions to return
 #' @param size The length of the basis functions
 #'
-
 #'
 #' @returns A \code{n_basis}\eqn{\times}\code{size} matrix
 #' containing the DCT basis
@@ -31,7 +30,7 @@
 #'
 #' @importFrom gsignal dctmtx
 #' @export
-dct_basis <- function(n_basis = 5, size = 100){
+dct_basis <- function(n_basis = 5, size = n_basis){
   mat <- dctmtx(size)
   mat[1,] <- mat[1,] / sqrt(1/size)
   mat[2:size,] <- mat[2:size,]/(sqrt(2/size))
