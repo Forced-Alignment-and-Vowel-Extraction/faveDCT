@@ -10,3 +10,12 @@ LazyData: true
 RoxygenNote: 7.3.1
 URL: https://github.com/JoFrhwld/curvemeans
 BugReports: https://github.com/JoFrhwld/curvemeans/issues
+Depends: 
+    R (>= 4.1)
+Imports: 
+    gsignal
+Suggests: 
+    knitr,
+    quarto,
+    rmarkdown
+VignetteBuilder: quarto
