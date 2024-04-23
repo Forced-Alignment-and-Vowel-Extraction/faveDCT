@@ -6,6 +6,42 @@
 \usage{
 dct_basis(n_basis = 5, size = 100)
 }
+\arguments{
+\item{n_basis}{The number of basis functions to return}
+
+\item{size}{The length of the basis functions}
+}
+\value{
+A \code{n_basis}\eqn{\times}\code{size} matrix
+containing the DCT basis
+}
 \description{
-DCT Basis
+This will generate a DCT basis equivalent to
+scipy.fft.dct
+}
+\details{
+The following python code will generate an equivalent
+DCT basis.
+
+\preformatted{
+# python
+from scipy.fft import dct
+import numpy as np
+size = 100
+n_basis = 5
+dct(
+  np.eye(size),
+  orthogonalize = True,
+  norm = "backward"
+ )[:,:n_basis]
+}
+}
+\examples{
+library(curvemeans)
+basis <- dct_basis(n_basis = 5, size = 100)
+matplot(
+  1:100,
+  t(basis),
+  type = 'l'
+)
 }
