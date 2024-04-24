@@ -13,6 +13,23 @@
 #' @export
 
 expand_dct <- function(coefs, size = length(coefs)){
+  if(is.null(dim(coefs))){
+    n_basis = length(coefs)
+  }else{
+    n_basis = dim(coefs)[2]
+  }
+  basis <- dct_basis(n_basis = n_basis, size = size)
+  fit <- coefs %*% basis
+
+  # flatten if 1d
+  if(is.null(dim(coefs))){
+    fit <- c(fit)
+  }
+  return(fit)
+}
+
+
+expand_dct_df <- function(coefs, size = length(coefs)){
   if(is.null(dim(param))){
     n_basis = length(param)
   }else{
@@ -20,5 +37,5 @@ expand_dct <- function(coefs, size = length(coefs)){
   }
   basis <- dct_basis(n_basis = n_basis, size = size)
   fit <- coefs %*% basis
-  return(fit)
+  as.data.frame(t(fit))
 }
