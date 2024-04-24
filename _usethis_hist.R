@@ -44,3 +44,7 @@ usethis::use_package("rlang")
 usethis::use_package("dplyr")
 usethis::use_package("purrr")
 usethis::use_package("tidyr")
+
+
+# suggests ---
+usethis::use_package("ragg", type = "suggests")
