@@ -15,7 +15,7 @@ usethis::use_roxygen_md()
 
 desc::desc_set(
   "Title",
-  "Curve Means"
+  "FAVE DCT"
 )
 
 
@@ -40,3 +40,7 @@ roxygen2::roxygenize()
 
 usethis::use_package("R", type = "Depends", min_version = "4.1")
 usethis::use_package("gsignal")
+usethis::use_package("rlang")
+usethis::use_package("dplyr")
+usethis::use_package("purrr")
+usethis::use_package("tidyr")
