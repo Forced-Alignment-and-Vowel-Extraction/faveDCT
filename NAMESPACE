@@ -2,4 +2,5 @@
 
 export(dct_basis)
 export(expand_dct)
+export(expand_dct_rate)
 importFrom(gsignal,dctmtx)
