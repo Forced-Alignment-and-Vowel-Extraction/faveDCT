@@ -2,11 +2,10 @@
 #'
 #' Given a set of DCT parameters, expand
 #' the fitted curve.
-#' @param coefs Either a 1d vector of DCT coefficients,
-#'        or a \eqn{n\times}\code{coefs} matrix
+#' @param coefs A 1d vector of DCT coefficients
 #' @param size The desired output length of the expansion
 #'
-#' @returns A \eqn{n\times}\code{size} matrix of the
+#' @returns A vector of length\code{size} of the
 #'          expanded DCT
 #'
 #' @example examples/expand_dct_example.R

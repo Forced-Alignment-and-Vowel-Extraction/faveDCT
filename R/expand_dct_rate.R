@@ -5,6 +5,11 @@
 #' the first-forward-difference of the inverse DCT will
 #' approximate the results of this function.
 #'
+#' @param coefs DCT coefficients
+#' @param size length of the result
+#'
+#' @returns A vector of length \code{size} of the rate of change
+#'
 #' @export
 expand_dct_rate <- function(coefs, size = length(coefs)){
   hatu = coefs * pi

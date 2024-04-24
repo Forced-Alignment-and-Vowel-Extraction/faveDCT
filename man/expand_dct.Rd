@@ -7,13 +7,12 @@
 expand_dct(coefs, size = length(coefs))
 }
 \arguments{
-\item{coefs}{Either a 1d vector of DCT coefficients,
-or a \eqn{n\times}\code{coefs} matrix}
+\item{coefs}{A 1d vector of DCT coefficients}
 
 \item{size}{The desired output length of the expansion}
 }
 \value{
-A \eqn{n\times}\code{size} matrix of the
+A vector of length\code{size} of the
          expanded DCT
 }
 \description{

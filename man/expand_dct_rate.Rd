@@ -6,6 +6,14 @@
 \usage{
 expand_dct_rate(coefs, size = length(coefs))
 }
+\arguments{
+\item{coefs}{DCT coefficients}
+
+\item{size}{length of the result}
+}
+\value{
+A vector of length \code{size} of the rate of change
+}
 \description{
 This will return the rate of change (first derivative)
 of a Discrete Cosine Transform. For large \code{size}s,
