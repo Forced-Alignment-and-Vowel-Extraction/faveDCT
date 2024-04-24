@@ -22,5 +22,6 @@ Imports:
 Suggests: 
     knitr,
     quarto,
+    ragg,
     rmarkdown
 VignetteBuilder: quarto
