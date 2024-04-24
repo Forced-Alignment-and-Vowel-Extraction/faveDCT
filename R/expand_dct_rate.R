@@ -10,6 +10,8 @@
 #'
 #' @returns A vector of length \code{size} of the rate of change
 #'
+#' @example examples/expand_dct_rate_example.R
+#'
 #' @export
 expand_dct_rate <- function(coefs, size = length(coefs)){
   hatu = coefs * pi
